@@ -5,6 +5,7 @@ import java.lang.Float;;
 
 public class SavingsCalculator {
 	private float[] credits,debits;
+	
 	public SavingsCalculator(float[] credits, float[] debits){
 		this.credits = credits;
 		this.debits = debits;
