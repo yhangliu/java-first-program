@@ -1,3 +1,4 @@
+import java.util.Arrays;
 import java.util.Map;
 
 import com.h2.BestLoanRates;
@@ -46,5 +47,21 @@ public class Finance {
 			return;
 		}
 		
+	}
+	
+	public static void main (String[] args) {
+		String command = args[0];
+		if(commandsToUsage.containsKey(command)) {
+			boolean isValidCommand = validateCommandArguments(args);
+			if(isValidCommand == false) {
+				commandsToUsage.get(args[0]);
+				return;
+			}
+			executeCommand(command, Arrays.copyOfRange(args,1,args.length));
+		}
+		else {
+			System.out.println(command + ": command not found")
+			return;
+		}
 	}
 }
