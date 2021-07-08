@@ -29,5 +29,8 @@ public class Finance {
 
 	}
 	
+	private static void executeCommand(String command, String[] arguments) {
+		
 
+	}
 }
