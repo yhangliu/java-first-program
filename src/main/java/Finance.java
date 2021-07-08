@@ -60,7 +60,7 @@ public class Finance {
 			executeCommand(command, Arrays.copyOfRange(args,1,args.length));
 		}
 		else {
-			System.out.println(command + ": command not found")
+			System.out.println(command + ": command not found");
 			return;
 		}
 	}
