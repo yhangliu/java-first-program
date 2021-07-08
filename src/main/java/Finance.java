@@ -1,7 +1,8 @@
 import java.util.Map;
-import com.h2.com.h2.BestLoanRates;
-import com.h2.com.h2.SavingsCalculator;
-import com.h2.com.h2.MortgageCalculator;
+
+import com.h2.BestLoanRates;
+import com.h2.MortgageCalculator;
+import com.h2.SavingsCalculator;
 
 public class Finance {
 	
