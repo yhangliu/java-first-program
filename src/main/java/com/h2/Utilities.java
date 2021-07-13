@@ -14,7 +14,7 @@ public class Utilities {
 		return out;
 	}
 	
-	public static long getIntValue(String in) {
+	public static int getIntValue(String in) {
 		
 		Long out = Long.MIN_VALUE;
 		try {
@@ -26,7 +26,7 @@ public class Utilities {
 		return out;
 	}
 	
-	public static long getFloatValue(String in) {
+	public static float getFloatValue(String in) {
 		
 		Long out = Long.MIN_VALUE;
 		try {
