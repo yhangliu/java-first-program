@@ -13,5 +13,29 @@ public class Utilities {
 		
 		return out;
 	}
+	
+	public static long getIntValue(String in) {
+		
+		Long out = Long.MIN_VALUE;
+		try {
+			out = Long.parseLong(in);
+		} catch(NumberFormatException e) {
+			throw new IllegalArgumentException(in + " cannot be converted into a 'int' value. Exiting program.");
+		}
+		
+		return out;
+	}
+	
+	public static long getFloatValue(String in) {
+		
+		Long out = Long.MIN_VALUE;
+		try {
+			out = Long.parseLong(in);
+		} catch(NumberFormatException e) {
+			throw new IllegalArgumentException(in + " cannot be converted into a 'float' value. Exiting program.");
+		}
+		
+		return out;
+	}
 
 }
