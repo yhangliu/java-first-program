@@ -16,9 +16,9 @@ public class Utilities {
 	
 	public static int getIntValue(String in) {
 		
-		Long out = Long.MIN_VALUE;
+		int out = Integer.MIN_VALUE;
 		try {
-			out = Long.parseLong(in);
+			out = Integer.parseInt(in);
 		} catch(NumberFormatException e) {
 			throw new IllegalArgumentException(in + " cannot be converted into a 'int' value. Exiting program.");
 		}
@@ -28,9 +28,9 @@ public class Utilities {
 	
 	public static float getFloatValue(String in) {
 		
-		Long out = Long.MIN_VALUE;
+		Float out = Float.MIN_VALUE;
 		try {
-			out = Long.parseLong(in);
+			out = Float.parseFloat(in);
 		} catch(NumberFormatException e) {
 			throw new IllegalArgumentException(in + " cannot be converted into a 'float' value. Exiting program.");
 		}
